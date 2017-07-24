@@ -80,3 +80,13 @@
    * If on GitHub, you can integrate the PowerShell repo to have automated the unit tests run with https://www.appveyor.com/
    * Example appveyor config: https://github.com/cloudbase/juju-powershell-modules/blob/master/appveyor.yml
 
+
+### Code quality checker
+   * PSScriptAnalyzer can be used to check the PowerShell code for quality
+   * Example:
+
+   ```powershell
+   Install-Module -Name PSScriptAnalyzer
+   $rules = @("PSProvideCommentHelp","PSUseDeclaredVarsMoreThanAssignment","PSAvoidUsingEmptyCatchBlock","PSAvoidUsingCmdletAliases","PSAvoidDefaultValueForMandatoryParameter","PSAvoidDefaultValueSwitchParameter","PSUseToExportFieldsInManifest","PSAvoidUsingPositionalParameters")
+   Invoke-ScriptAnalyzer -Path . -IncludeRule $rules
+   ```
