@@ -81,7 +81,7 @@
    * Example appveyor config: https://github.com/cloudbase/juju-powershell-modules/blob/master/appveyor.yml
 
 
-### Code quality checker
+### Code quality
    * PSScriptAnalyzer can be used to check the PowerShell code for quality
    * Example:
 
@@ -90,3 +90,4 @@
    $rules = @("PSProvideCommentHelp","PSUseDeclaredVarsMoreThanAssignment","PSAvoidUsingEmptyCatchBlock","PSAvoidUsingCmdletAliases","PSAvoidDefaultValueForMandatoryParameter","PSAvoidDefaultValueSwitchParameter","PSUseToExportFieldsInManifest","PSAvoidUsingPositionalParameters")
    Invoke-ScriptAnalyzer -Path . -IncludeRule $rules
    ```
+   * Try to keep the maximum line length to 79 chars. It makes the commits and pull requests more readable.
