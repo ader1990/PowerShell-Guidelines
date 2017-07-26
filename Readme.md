@@ -15,7 +15,7 @@
     This practice makes command names more consistent and predictable, and easier to use,
     especially for users who do not speak English as a first language
 
-### Use of parantheses and param definition
+### Use of parentheses and param definition
    * Use CamelCasing naming for function parameters
    * Use camelCasing naming for internal function parameters
    * Use the opening curly bracket on the first line where function name is and use the closing bracket on the new line after the code block ends { #\n add a newline here } 
@@ -50,7 +50,7 @@
    * Use a *.psd1 file to declare your module
    * Use one or more *.psm1 files to declare your common methods
    * Try to use only entry point (a .ps1) which imports a module and executes one static method
-   * From the *.psm1 export the minimum amount of methods and define them in the *.psd1 file. This way, the module will have a well defined interface and the bacwards compatibility cand be easily controlled.
+   * From the *.psm1 export the minimum amount of methods and define them in the *.psd1 file. This way, the module will have a well defined interface and the backwards compatibility can be easily controlled.
    * Good example: https://github.com/cloudbase/juju-powershell-modules/tree/master/JujuHelper
 
 ### Documentation
